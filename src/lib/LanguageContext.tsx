@@ -13,7 +13,7 @@ import { content, type Lang } from "./content";
 type LanguageContextValue = {
   lang: Lang;
   toggle: () => void;
-  t: (typeof content)["es"];
+  t: (typeof content)[Lang];
 };
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
