@@ -99,17 +99,17 @@ export const content = {
     },
     services: {
       eyebrow: "Áreas de práctica",
-      title: "Tres frentes, un solo criterio",
+      title: "Cuatro frentes, un mismo criterio",
       subtitle:
         "Ningún asunto es solo el problema legal que lo detona. Lo abordo como un sistema.",
       note: "Como estudiante de último semestre, aún no cuento con tarjeta profesional. Los servicios a continuación son de asesoría, gestión y apoyo — no representación legal ni litigio, que requieren un abogado titulado.",
       groups: [
         {
           number: "01",
-          title: "Asesoría corporativa y empresarial",
-          tags: "CONSTITUCIÓN · CONTRATOS · GOBIERNO",
+          title: "Derecho corporativo",
+          tags: "CONSTITUCIÓN · GOBIERNO · CONTRATOS",
           description:
-            "Acompañamiento en la estructuración de ideas de negocio, revisión preliminar de contratos comerciales y apoyo en procesos de facturación y proveedores, bajo supervisión de profesionales titulados.",
+            "Acompañamiento en la estructuración societaria y las reglas de gobierno de la empresa, bajo supervisión de profesionales titulados. La arquitectura antes del crecimiento.",
         },
         {
           number: "02",
@@ -120,10 +120,17 @@ export const content = {
         },
         {
           number: "03",
-          title: "Mecanismos alternativos de solución de conflictos",
-          tags: "CONCILIACIÓN · ACTAS · DERECHOS DE PETICIÓN",
+          title: "Conciliación y MASC",
+          tags: "MEDIACIÓN · ACUERDOS · NEGOCIACIÓN",
           description:
-            "Experiencia directa coordinando y facilitando procesos de conciliación comunitaria, con redacción de actas y documentos de acuerdo.",
+            "Experiencia directa facilitando procesos de conciliación, con foco en acuerdos rápidos y documentados. Un pleito ganado en tres años suele costar más que un acuerdo cerrado en tres semanas.",
+        },
+        {
+          number: "04",
+          title: "Contratos y riesgo",
+          tags: "REVISIÓN · CLÁUSULAS · RIESGOS",
+          description:
+            "Revisión preliminar de contratos comerciales, con foco en la cláusula que va a importar cuando algo salga mal — no en la que se ve bien al firmar, bajo supervisión de profesionales titulados.",
         },
       ],
     },
@@ -304,17 +311,17 @@ export const content = {
     },
     services: {
       eyebrow: "Areas of practice",
-      title: "Three fronts, one standard",
+      title: "Four fronts, one standard",
       subtitle:
         "No matter is ever just the legal problem that triggered it. I approach it as a system.",
       note: "As a final-year student, I don't yet hold a professional bar license. The services below are advisory, administrative, and support work — not legal representation or litigation, which require a licensed attorney.",
       groups: [
         {
           number: "01",
-          title: "Corporate & business advisory",
-          tags: "FORMATION · CONTRACTS · GOVERNANCE",
+          title: "Corporate law",
+          tags: "FORMATION · GOVERNANCE · CONTRACTS",
           description:
-            "Support structuring business ideas, preliminary review of commercial contracts, and support with billing and vendor processes, under the supervision of licensed professionals.",
+            "Support with corporate structuring and company governance rules, under the supervision of licensed professionals. The architecture before the growth.",
         },
         {
           number: "02",
@@ -325,10 +332,17 @@ export const content = {
         },
         {
           number: "03",
-          title: "Alternative dispute resolution",
-          tags: "CONCILIATION · MINUTES · PETITIONS",
+          title: "Conciliation & ADR",
+          tags: "MEDIATION · AGREEMENTS · NEGOTIATION",
           description:
-            "Direct, hands-on experience coordinating and facilitating community conciliation processes, with drafting of minutes and agreement documents.",
+            "Direct, hands-on experience facilitating conciliation processes, focused on fast, documented agreements. A case won in three years usually costs more than a deal closed in three weeks.",
+        },
+        {
+          number: "04",
+          title: "Contracts & risk",
+          tags: "REVIEW · CLAUSES · RISK",
+          description:
+            "Preliminary review of commercial contracts, focused on the clause that will matter when something goes wrong — not the one that looks good at signing, under the supervision of licensed professionals.",
         },
       ],
     },
