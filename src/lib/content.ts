@@ -18,7 +18,7 @@ export const content = {
     },
     hero: {
       eyebrow: "Derecho · Medellín, Colombia",
-      name: "Juan Sebastián\nBedoya Castrillón",
+      brandTagline: "Asesoría Legal",
       role: "Estudiante de Derecho — Universidad EAFIT",
       tagline:
         "Construyendo una práctica legal fundamentada en negociación, resolución de conflictos y acompañamiento cercano — con la rigurosidad de quien se está formando para ejercer con excelencia.",
@@ -181,7 +181,7 @@ export const content = {
     },
     hero: {
       eyebrow: "Law · Medellín, Colombia",
-      name: "Juan Sebastián\nBedoya Castrillón",
+      brandTagline: "Legal Advisory",
       role: "Law Student — Universidad EAFIT",
       tagline:
         "Building a legal practice grounded in negotiation, conflict resolution, and close client care — with the rigor of someone training to practice with excellence.",

@@ -63,12 +63,15 @@ export function Hero() {
             {t.hero.eyebrow}
           </motion.span>
 
-          <motion.h1
-            variants={item}
-            className="font-serif-display text-[2.6rem] leading-[1.08] font-medium tracking-tight whitespace-pre-line sm:text-6xl lg:text-[4rem]"
-          >
-            {t.hero.name}
-          </motion.h1>
+          <motion.div variants={item}>
+            <h1 className="font-serif-display text-[2.4rem] leading-[1.15] font-medium tracking-wide uppercase sm:text-5xl lg:text-[3.4rem]">
+              Bedoya Castrillón
+            </h1>
+            <div className="mt-4 h-px w-16 bg-gold" />
+            <p className="mt-4 text-xs font-semibold tracking-[0.2em] text-paper/50 uppercase">
+              {t.hero.brandTagline}
+            </p>
+          </motion.div>
 
           <motion.p
             variants={item}
