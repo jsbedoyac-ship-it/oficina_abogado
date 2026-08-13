@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -50,8 +49,13 @@ export function Hero() {
         transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
       />
 
-      <div className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-5 pt-28 pb-16 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:pt-24">
-        <motion.div variants={container} initial="hidden" animate="show">
+      <div className="relative mx-auto w-full max-w-6xl px-5 pt-28 pb-16 sm:px-8 lg:pt-24">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="max-w-3xl"
+        >
           <motion.span
             variants={item}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/40 px-4 py-1.5 text-xs font-semibold tracking-[0.14em] text-gold-light uppercase"
@@ -100,24 +104,6 @@ export function Hero() {
               <ArrowDown size={15} aria-hidden="true" />
             </a>
           </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="mx-auto w-full max-w-[420px] lg:max-w-[480px]"
-        >
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-gold/30 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.6)]">
-            <Image
-              src="/juan-sebastian-bedoya.jpg"
-              alt="Juan Sebastián Bedoya Castrillón"
-              fill
-              sizes="(min-width: 1024px) 480px, 420px"
-              className="object-cover"
-              priority
-            />
-          </div>
         </motion.div>
       </div>
     </section>
