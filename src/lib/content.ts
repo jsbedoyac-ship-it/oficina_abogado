@@ -30,8 +30,7 @@ export const content = {
       eyebrow: "Sobre mí",
       name: "Juan Sebastián\nBedoya Castrillón",
       body: [
-        "Estudiante de Derecho en último semestre en la Universidad EAFIT, con formación en resolución de conflictos, derecho corporativo y derecho civil. Mi enfoque nace de una convicción simple: la mayoría de los conflictos son fallas de estructura, no de mala fe.",
-        "Por eso trabajo primero sobre los documentos y las reglas del juego — orientación, revisión y gestión — y remito a un abogado titulado cuando el asunto exige litigio o representación formal. Es más honesto con el proceso y más útil para quien me escribe.",
+        "Estudiante de Derecho en último semestre en la Universidad EAFIT, con formación en resolución de conflictos, derecho corporativo, derecho privado y derecho civil. Mi enfoque nace de una convicción simple: la mayoría de los conflictos son fallas de estructura, no de mala fe.",
       ],
       facts: [
         { label: "Derecho · Pregrado", value: "Universidad EAFIT" },
@@ -39,8 +38,6 @@ export const content = {
         { label: "Bachillerato Internacional", value: "Diploma IB" },
         { label: "Idiomas", value: "Español · Inglés" },
       ],
-      quote:
-        "Prefiero decirte con claridad qué sí puedo acompañarte a resolver, y a quién debes acudir cuando el caso lo exige.",
     },
     timeline: {
       eyebrow: "Trayectoria",
@@ -242,8 +239,7 @@ export const content = {
       eyebrow: "About me",
       name: "Juan Sebastián\nBedoya Castrillón",
       body: [
-        "Final-year Law student at Universidad EAFIT, with training in conflict resolution, corporate law, and civil law. My approach starts from a simple conviction: most conflicts are failures of structure, not bad faith.",
-        "That's why I work on the documents and the rules of the game first — guidance, review, and case management — and refer to a licensed attorney when a matter calls for litigation or formal representation. It's more honest about the process and more useful for whoever writes to me.",
+        "Final-year Law student at Universidad EAFIT, with training in conflict resolution, corporate law, private law, and civil law. My approach starts from a simple conviction: most conflicts are failures of structure, not bad faith.",
       ],
       facts: [
         { label: "Law · Undergraduate", value: "Universidad EAFIT" },
@@ -251,8 +247,6 @@ export const content = {
         { label: "International Baccalaureate", value: "IB Diploma" },
         { label: "Languages", value: "Spanish · English" },
       ],
-      quote:
-        "I'd rather tell you clearly what I can actually help you resolve — and who you should go to when the case calls for it.",
     },
     timeline: {
       eyebrow: "Path",
