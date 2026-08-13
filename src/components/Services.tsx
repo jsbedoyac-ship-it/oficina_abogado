@@ -24,14 +24,7 @@ export function Services() {
           </div>
         </Reveal>
 
-        <Reveal
-          delay={0.1}
-          className="mt-10 rounded-xl border border-gold/30 bg-navy/20 px-6 py-4 text-sm leading-relaxed text-paper/70"
-        >
-          {t.services.note}
-        </Reveal>
-
-        <div className="mt-8 border-t border-border-dark">
+        <div className="mt-10 border-t border-border-dark">
           {t.services.groups.map((group, i) => (
             <Reveal
               key={group.title}

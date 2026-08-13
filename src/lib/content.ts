@@ -99,7 +99,6 @@ export const content = {
       title: "Cuatro frentes, un mismo criterio",
       subtitle:
         "Ningún asunto es solo el problema legal que lo detona. Lo abordo como un sistema.",
-      note: "Como estudiante de último semestre, aún no cuento con tarjeta profesional. Los servicios a continuación son de asesoría, gestión y apoyo — no representación legal ni litigio, que requieren un abogado titulado.",
       groups: [
         {
           number: "01",
@@ -308,7 +307,6 @@ export const content = {
       title: "Four fronts, one standard",
       subtitle:
         "No matter is ever just the legal problem that triggered it. I approach it as a system.",
-      note: "As a final-year student, I don't yet hold a professional bar license. The services below are advisory, administrative, and support work — not legal representation or litigation, which require a licensed attorney.",
       groups: [
         {
           number: "01",
