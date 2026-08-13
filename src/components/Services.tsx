@@ -1,67 +1,66 @@
 "use client";
 
-import { Building2, Users, Scale3d, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Reveal } from "./Reveal";
-
-const icons = [Building2, Users, Scale3d];
 
 export function Services() {
   const { t } = useLanguage();
 
   return (
-    <section id="servicios" className="bg-paper py-24 sm:py-32">
+    <section id="servicios" className="bg-ink py-24 text-paper sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold tracking-[0.14em] text-gold uppercase">
+        <Reveal className="grid grid-cols-1 gap-6 lg:grid-cols-[0.3fr_1fr] lg:gap-12">
+          <span className="text-xs font-semibold tracking-[0.14em] text-paper/50 uppercase">
             {t.services.eyebrow}
           </span>
-          <h2 className="mt-4 font-serif-display text-3xl leading-tight font-medium text-ink sm:text-4xl">
-            {t.services.title}
-          </h2>
+          <div>
+            <h2 className="font-serif-display text-3xl leading-tight font-medium sm:text-4xl lg:text-5xl">
+              {t.services.title}
+            </h2>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-paper/70 sm:text-lg">
+              {t.services.subtitle}
+            </p>
+          </div>
         </Reveal>
 
         <Reveal
           delay={0.1}
-          className="mx-auto mt-8 max-w-2xl rounded-xl border border-gold/30 bg-paper-alt px-6 py-4 text-center text-sm leading-relaxed text-muted"
+          className="mt-10 rounded-xl border border-gold/30 bg-navy/20 px-6 py-4 text-sm leading-relaxed text-paper/70"
         >
           {t.services.note}
         </Reveal>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {t.services.groups.map((group, i) => {
-            const Icon = icons[i % icons.length];
-            return (
-              <Reveal key={group.title} delay={i * 0.1}>
-                <div className="flex h-full flex-col rounded-2xl border border-border bg-paper p-8 transition-shadow duration-300 hover:shadow-[0_20px_50px_-25px_rgba(11,18,32,0.35)]">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy/5">
-                    <Icon size={22} className="text-navy" aria-hidden="true" />
-                  </div>
-                  <h3 className="mt-6 font-serif-display text-xl text-ink">
-                    {group.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
-                    {group.description}
-                  </p>
-                  <ul className="mt-6 space-y-3 border-t border-border pt-6">
-                    {group.items.map((it) => (
-                      <li
-                        key={it}
-                        className="flex items-start gap-2.5 text-sm text-ink/85"
-                      >
-                        <Check
-                          size={16}
-                          className="mt-0.5 shrink-0 text-gold"
-                          aria-hidden="true"
-                        />
-                        {it}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            );
-          })}
+        <div className="mt-8 border-t border-border-dark">
+          {t.services.groups.map((group, i) => (
+            <Reveal
+              key={group.title}
+              delay={Math.min(i * 0.08, 0.3)}
+              className="group grid grid-cols-1 gap-4 border-b border-border-dark py-10 lg:grid-cols-[0.3fr_1fr] lg:gap-12"
+            >
+              <div>
+                <span className="font-serif-display text-lg text-gold">
+                  {group.number}
+                </span>
+                <h3 className="mt-2 font-serif-display text-2xl text-paper">
+                  {group.title}
+                </h3>
+                <p className="mt-2 text-xs tracking-wide text-paper/40 uppercase">
+                  {group.tags}
+                </p>
+              </div>
+              <div className="flex items-start justify-between gap-6">
+                <p className="max-w-xl text-sm leading-relaxed text-paper/70 sm:text-base">
+                  {group.description}
+                </p>
+                <ArrowRight
+                  size={18}
+                  className="mt-1 shrink-0 text-paper/30 transition-transform duration-200 group-hover:translate-x-1 group-hover:text-gold-light"
+                  aria-hidden="true"
+                />
+              </div>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

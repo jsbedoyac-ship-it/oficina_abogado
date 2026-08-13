@@ -12,6 +12,7 @@ export const content = {
         { href: "#sobre-mi", label: "Sobre mí" },
         { href: "#trayectoria", label: "Trayectoria" },
         { href: "#servicios", label: "Servicios" },
+        { href: "#metodo", label: "Método" },
         { href: "#contacto", label: "Contacto" },
       ],
       cta: "Contáctame",
@@ -27,16 +28,19 @@ export const content = {
     },
     about: {
       eyebrow: "Sobre mí",
-      title: "Un enfoque práctico, humano y riguroso del Derecho",
+      name: "Juan Sebastián\nBedoya Castrillón",
       body: [
-        "Estoy en último semestre de Derecho en la Universidad EAFIT, con una formación complementada por el Programa del Diploma del Bachillerato Internacional (IB) y experiencia real en el sector asegurador y en administración de operaciones.",
-        "Creo en el Derecho como herramienta para alcanzar justicia real — no solo aplicación mecánica de la norma. Mi trabajo se apoya en habilidades de negociación, mediación de conflictos y comunicación efectiva, desarrolladas tanto en el aula como en el campo.",
+        "Estudiante de Derecho en último semestre en la Universidad EAFIT, con formación en resolución de conflictos, derecho corporativo y derecho civil. Mi enfoque nace de una convicción simple: la mayoría de los conflictos son fallas de estructura, no de mala fe.",
+        "Por eso trabajo primero sobre los documentos y las reglas del juego — orientación, revisión y gestión — y remito a un abogado titulado cuando el asunto exige litigio o representación formal. Es más honesto con el proceso y más útil para quien me escribe.",
       ],
-      stats: [
-        { value: "2026", label: "Grado esperado" },
-        { value: "2+", label: "Años de experiencia laboral" },
-        { value: "3", label: "Procesos de conciliación coordinados" },
+      facts: [
+        { label: "Derecho · Pregrado", value: "Universidad EAFIT" },
+        { label: "Conciliación en Derecho", value: "JURISMACS · MASC" },
+        { label: "Bachillerato Internacional", value: "Diploma IB" },
+        { label: "Idiomas", value: "Español · Inglés" },
       ],
+      quote:
+        "Prefiero decirte con claridad qué sí puedo acompañarte a resolver, y a quién debes acudir cuando el caso lo exige.",
     },
     timeline: {
       eyebrow: "Trayectoria",
@@ -94,65 +98,103 @@ export const content = {
       },
     },
     services: {
-      eyebrow: "Áreas de interés",
-      title: "En qué puedo acompañarte hoy",
+      eyebrow: "Áreas de práctica",
+      title: "Tres frentes, un solo criterio",
+      subtitle:
+        "Ningún asunto es solo el problema legal que lo detona. Lo abordo como un sistema.",
       note: "Como estudiante de último semestre, aún no cuento con tarjeta profesional. Los servicios a continuación son de asesoría, gestión y apoyo — no representación legal ni litigio, que requieren un abogado titulado.",
       groups: [
         {
+          number: "01",
           title: "Asesoría corporativa y empresarial",
+          tags: "CONSTITUCIÓN · CONTRATOS · GOBIERNO",
           description:
-            "Acompañamiento en la estructuración de ideas de negocio y revisión preliminar de documentos, bajo supervisión de profesionales titulados.",
-          items: [
-            "Orientación en constitución de sociedades",
-            "Revisión preliminar de contratos comerciales",
-            "Apoyo en procesos de facturación y proveedores",
-          ],
+            "Acompañamiento en la estructuración de ideas de negocio, revisión preliminar de contratos comerciales y apoyo en procesos de facturación y proveedores, bajo supervisión de profesionales titulados.",
         },
         {
+          number: "02",
           title: "Civil y familia",
+          tags: "SUCESIONES · ARRENDAMIENTOS · TRÁMITES",
           description:
             "Orientación inicial y gestión documental en asuntos civiles y de familia, con derivación a abogado titulado cuando el caso lo requiere.",
-          items: [
-            "Orientación en sucesiones",
-            "Acompañamiento en trámites de arrendamiento",
-            "Apoyo documental en procesos de familia",
-          ],
         },
         {
+          number: "03",
           title: "Mecanismos alternativos de solución de conflictos",
+          tags: "CONCILIACIÓN · ACTAS · DERECHOS DE PETICIÓN",
           description:
-            "Experiencia directa coordinando y facilitando procesos de conciliación comunitaria.",
-          items: [
-            "Facilitación de procesos de conciliación",
-            "Redacción de actas y documentos de acuerdo",
-            "Derechos de petición y tutelas",
-          ],
+            "Experiencia directa coordinando y facilitando procesos de conciliación comunitaria, con redacción de actas y documentos de acuerdo.",
+        },
+      ],
+    },
+    method: {
+      eyebrow: "Método",
+      stepLabel: "Etapa",
+      title: "Cómo se trabaja un caso aquí",
+      subtitle:
+        "Sin promesas vacías ni informes de cien páginas que nadie lee. Cuatro pasos, cada uno con un entregable concreto.",
+      steps: [
+        {
+          number: "01",
+          title: "Escucha",
+          description:
+            "Conversación inicial sin costo. Salgo entendiendo tu situación, no solo el problema legal.",
+          deliverable: "Entrega: resumen del caso",
+        },
+        {
+          number: "02",
+          title: "Diagnóstico",
+          description:
+            "Reviso la documentación y ubico los riesgos y las opciones reales, en lenguaje claro.",
+          deliverable: "Entrega: informe · 72 h",
+        },
+        {
+          number: "03",
+          title: "Orientación",
+          description:
+            "Te explico qué puedo acompañarte a resolver directamente y cuándo conviene un abogado titulado.",
+          deliverable: "Entrega: plan de acción",
+        },
+        {
+          number: "04",
+          title: "Acompañamiento",
+          description:
+            "Sigo el proceso contigo, con actualizaciones periódicas, sin que tengas que perseguirme.",
+          deliverable: "Entrega: reporte de avance",
         },
       ],
     },
     contact: {
-      eyebrow: "Contacto",
-      title: "Hablemos de tu caso",
-      freeConsultation: "Consulta gratuita",
+      eyebrow: "Consulta inicial",
+      title: "La primera conversación no se cobra.",
       body:
-        "Escríbeme y con gusto reviso tu situación para orientarte o conectarte con el profesional adecuado.",
+        "Cuéntame el asunto en pocas líneas. Respondo en menos de 24 horas hábiles diciéndote si puedo acompañarte — y si no, a quién deberías acudir.",
       email: "jsbedoyac@gmail.com",
       phoneDisplay: "+57 301 573 6677",
       phoneWhatsapp: "573015736677",
       location: "Medellín, Colombia",
+      attention: "Medellín, presencial · resto de Colombia, virtual",
       linkedin:
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
       whatsappIntro: "Buen día. Estoy interesado en consultar con Bedoya - Legal.",
+      materias: ["Corporativo", "Civil y familia", "Conciliación"],
+      infoLabels: {
+        email: "Correo",
+        phone: "Teléfono",
+        attention: "Atención",
+      },
       formLabels: {
         name: "Nombre completo",
         phone: "Teléfono / WhatsApp",
         email: "Correo",
-        message: "Cuéntame brevemente qué pasó",
-        disclaimer: "Toda la información que compartas es tratada de forma confidencial.",
+        company: "Empresa (opcional)",
+        matter: "Materia",
+        message: "El asunto",
+        disclaimer: "Toda la información que compartas se trata de forma confidencial.",
         consentPrefix: "Acepto el ",
         consentLink: "tratamiento de datos personales",
         consentSuffix: " conforme a la Ley 1581 de 2012.",
-        submit: "Enviar consulta",
+        submit: "Enviar solicitud",
       },
     },
     footer: {
@@ -175,6 +217,7 @@ export const content = {
         { href: "#sobre-mi", label: "About" },
         { href: "#trayectoria", label: "Path" },
         { href: "#servicios", label: "Services" },
+        { href: "#metodo", label: "Method" },
         { href: "#contacto", label: "Contact" },
       ],
       cta: "Get in touch",
@@ -190,16 +233,19 @@ export const content = {
     },
     about: {
       eyebrow: "About me",
-      title: "A practical, human, and rigorous approach to law",
+      name: "Juan Sebastián\nBedoya Castrillón",
       body: [
-        "I'm in my final semester of Law at Universidad EAFIT, with training complemented by the International Baccalaureate (IB) Diploma Programme and real experience in insurance and operations management.",
-        "I believe in law as a tool to achieve real justice — not just mechanical application of the rule. My work relies on negotiation, conflict mediation, and effective communication, developed both in the classroom and in the field.",
+        "Final-year Law student at Universidad EAFIT, with training in conflict resolution, corporate law, and civil law. My approach starts from a simple conviction: most conflicts are failures of structure, not bad faith.",
+        "That's why I work on the documents and the rules of the game first — guidance, review, and case management — and refer to a licensed attorney when a matter calls for litigation or formal representation. It's more honest about the process and more useful for whoever writes to me.",
       ],
-      stats: [
-        { value: "2026", label: "Expected graduation" },
-        { value: "2+", label: "Years of work experience" },
-        { value: "3", label: "Conciliation processes coordinated" },
+      facts: [
+        { label: "Law · Undergraduate", value: "Universidad EAFIT" },
+        { label: "Conciliation in Law", value: "JURISMACS · ADR" },
+        { label: "International Baccalaureate", value: "IB Diploma" },
+        { label: "Languages", value: "Spanish · English" },
       ],
+      quote:
+        "I'd rather tell you clearly what I can actually help you resolve — and who you should go to when the case calls for it.",
     },
     timeline: {
       eyebrow: "Path",
@@ -257,60 +303,98 @@ export const content = {
       },
     },
     services: {
-      eyebrow: "Areas of focus",
-      title: "How I can support you today",
+      eyebrow: "Areas of practice",
+      title: "Three fronts, one standard",
+      subtitle:
+        "No matter is ever just the legal problem that triggered it. I approach it as a system.",
       note: "As a final-year student, I don't yet hold a professional bar license. The services below are advisory, administrative, and support work — not legal representation or litigation, which require a licensed attorney.",
       groups: [
         {
+          number: "01",
           title: "Corporate & business advisory",
+          tags: "FORMATION · CONTRACTS · GOVERNANCE",
           description:
-            "Support structuring business ideas and preliminary document review, under the supervision of licensed professionals.",
-          items: [
-            "Guidance on company formation",
-            "Preliminary review of commercial contracts",
-            "Support with billing and vendor processes",
-          ],
+            "Support structuring business ideas, preliminary review of commercial contracts, and support with billing and vendor processes, under the supervision of licensed professionals.",
         },
         {
+          number: "02",
           title: "Civil & family",
+          tags: "ESTATES · LEASES · PROCEDURES",
           description:
             "Initial guidance and document management on civil and family matters, with referral to a licensed attorney when the case requires it.",
-          items: [
-            "Guidance on estate/succession matters",
-            "Support with lease agreements",
-            "Document support for family law processes",
-          ],
         },
         {
+          number: "03",
           title: "Alternative dispute resolution",
+          tags: "CONCILIATION · MINUTES · PETITIONS",
           description:
-            "Direct, hands-on experience coordinating and facilitating community conciliation processes.",
-          items: [
-            "Facilitation of conciliation processes",
-            "Drafting of minutes and agreement documents",
-            "Petitions and writs of protection (tutelas)",
-          ],
+            "Direct, hands-on experience coordinating and facilitating community conciliation processes, with drafting of minutes and agreement documents.",
+        },
+      ],
+    },
+    method: {
+      eyebrow: "Method",
+      stepLabel: "Stage",
+      title: "How a case is handled here",
+      subtitle:
+        "No empty promises, no hundred-page reports nobody reads. Four steps, each with a concrete deliverable.",
+      steps: [
+        {
+          number: "01",
+          title: "Listen",
+          description:
+            "A free initial conversation. I come away understanding your situation, not just the legal problem.",
+          deliverable: "Deliverable: case summary",
+        },
+        {
+          number: "02",
+          title: "Diagnosis",
+          description:
+            "I review the documentation and map out the real risks and options, in plain language.",
+          deliverable: "Deliverable: report · 72 h",
+        },
+        {
+          number: "03",
+          title: "Guidance",
+          description:
+            "I explain what I can help you resolve directly, and when a licensed attorney is the right call.",
+          deliverable: "Deliverable: action plan",
+        },
+        {
+          number: "04",
+          title: "Follow-through",
+          description:
+            "I stay with the process, with periodic updates, so you never have to chase me for a status.",
+          deliverable: "Deliverable: progress report",
         },
       ],
     },
     contact: {
-      eyebrow: "Contact",
-      title: "Let's talk about your case",
-      freeConsultation: "Free consultation",
+      eyebrow: "Initial consultation",
+      title: "The first conversation is free.",
       body:
-        "Reach out and I'll gladly review your situation to guide you or connect you with the right professional.",
+        "Tell me the matter in a few lines. I respond in under 24 business hours to say whether I can help — and if not, who you should go to.",
       email: "jsbedoyac@gmail.com",
       phoneDisplay: "+57 301 573 6677",
       phoneWhatsapp: "573015736677",
       location: "Medellín, Colombia",
+      attention: "In-person in Medellín · virtual across Colombia",
       linkedin:
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
       whatsappIntro: "Hello. I'm interested in consulting with Bedoya - Legal.",
+      materias: ["Corporate", "Civil & family", "Conciliation"],
+      infoLabels: {
+        email: "Email",
+        phone: "Phone",
+        attention: "Availability",
+      },
       formLabels: {
         name: "Full name",
         phone: "Phone / WhatsApp",
         email: "Email",
-        message: "Briefly tell me what happened",
+        company: "Company (optional)",
+        matter: "Matter",
+        message: "The matter",
         disclaimer: "Everything you share is treated confidentially.",
         consentPrefix: "I accept the ",
         consentLink: "personal data processing policy",

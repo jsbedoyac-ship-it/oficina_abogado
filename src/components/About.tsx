@@ -7,40 +7,55 @@ export function About() {
   const { t } = useLanguage();
 
   return (
-    <section id="sobre-mi" className="bg-paper py-24 sm:py-32">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-14 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+    <section id="sobre-mi" className="bg-ink py-24 text-paper sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
-          <span className="text-xs font-semibold tracking-[0.14em] text-gold uppercase">
+          <span className="text-xs font-semibold tracking-[0.14em] text-gold-light uppercase">
             {t.about.eyebrow}
           </span>
-          <h2 className="mt-4 font-serif-display text-3xl leading-tight font-medium text-ink sm:text-4xl">
-            {t.about.title}
-          </h2>
         </Reveal>
 
-        <div>
-          <Reveal>
-            <div className="space-y-5 text-base leading-relaxed text-muted sm:text-lg">
-              {t.about.body.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
-          </Reveal>
+        <div className="mt-8 grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+          <div>
+            <Reveal>
+              <h2 className="font-serif-display text-3xl leading-tight font-medium whitespace-pre-line sm:text-4xl">
+                {t.about.name}
+              </h2>
+            </Reveal>
 
-          <Reveal delay={0.15}>
-            <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-border pt-8">
-              {t.about.stats.map((stat) => (
-                <div key={stat.label}>
-                  <dt className="sr-only">{stat.label}</dt>
-                  <dd className="font-serif-display text-3xl text-navy sm:text-4xl">
-                    {stat.value}
-                  </dd>
-                  <p className="mt-1 text-xs tracking-wide text-muted sm:text-sm">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </dl>
+            <Reveal delay={0.1}>
+              <div className="mt-8 space-y-5 text-base leading-relaxed text-paper/75 sm:text-lg">
+                {t.about.body.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.15}>
+              <dl className="mt-10 border-t border-border-dark pt-2">
+                {t.about.facts.map((fact) => (
+                  <div
+                    key={fact.label}
+                    className="flex items-center justify-between border-b border-border-dark py-4"
+                  >
+                    <dt className="text-sm font-medium text-paper/90 sm:text-base">
+                      {fact.label}
+                    </dt>
+                    <dd className="text-sm text-paper/50 sm:text-base">
+                      {fact.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.2} className="flex items-end">
+            <blockquote className="border-l-2 border-gold py-1 pl-6">
+              <p className="font-serif-display text-2xl leading-snug text-paper italic sm:text-3xl">
+                &ldquo;{t.about.quote}&rdquo;
+              </p>
+            </blockquote>
           </Reveal>
         </div>
       </div>
