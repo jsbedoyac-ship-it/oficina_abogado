@@ -100,37 +100,27 @@ export function Hero() {
               <ArrowDown size={15} aria-hidden="true" />
             </a>
           </motion.div>
-
-          <motion.p
-            variants={item}
-            className="mt-8 text-xs tracking-wide text-paper/50"
-          >
-            {t.hero.badge}
-          </motion.p>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="mx-auto flex flex-col items-center gap-4"
+          className="mx-auto w-full max-w-[440px] lg:max-w-[540px]"
         >
-          <div className="relative aspect-square w-full max-w-[320px] rounded-full border border-gold/30 bg-gradient-to-br from-navy-soft to-ink p-2 lg:max-w-[380px]">
+          <div className="relative aspect-square w-full rounded-full border border-gold/30 bg-gradient-to-br from-navy-soft to-ink p-2">
             <div className="relative h-full w-full overflow-hidden rounded-full">
               <Image
                 src="/juan-sebastian-bedoya.jpg"
                 alt="Juan Sebastián Bedoya Castrillón"
                 fill
-                sizes="(min-width: 1024px) 380px, 320px"
+                sizes="(min-width: 1024px) 540px, 440px"
                 className="object-cover"
                 priority
               />
             </div>
             <div className="pointer-events-none absolute inset-2 rounded-full border border-gold/20" />
           </div>
-          <span className="text-[0.65rem] tracking-[0.2em] text-paper/50 uppercase">
-            Universidad EAFIT
-          </span>
         </motion.div>
       </div>
     </section>

@@ -24,7 +24,6 @@ export const content = {
         "Construyendo una práctica legal fundamentada en negociación, resolución de conflictos y acompañamiento cercano — con la rigurosidad de quien se está formando para ejercer con excelencia.",
       ctaPrimary: "Agenda una asesoría",
       ctaSecondary: "Conoce mi trayectoria",
-      badge: "Próximo a graduarse — Universidad EAFIT",
     },
     about: {
       eyebrow: "Sobre mí",
@@ -134,6 +133,7 @@ export const content = {
     contact: {
       eyebrow: "Contacto",
       title: "Hablemos de tu caso",
+      freeConsultation: "Consulta gratuita",
       body:
         "Escríbeme y con gusto reviso tu situación para orientarte o conectarte con el profesional adecuado.",
       email: "jsbedoyac@gmail.com",
@@ -144,16 +144,24 @@ export const content = {
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
       whatsappIntro: "Buen día. Estoy interesado en consultar con Bedoya - Legal.",
       formLabels: {
-        name: "Nombre",
+        name: "Nombre completo",
+        phone: "Teléfono / WhatsApp",
         email: "Correo",
-        message: "Cuéntame en qué puedo ayudarte",
-        submit: "Enviar por WhatsApp",
+        message: "Cuéntame brevemente qué pasó",
+        disclaimer: "Toda la información que compartas es tratada de forma confidencial.",
+        consentPrefix: "Acepto el ",
+        consentLink: "tratamiento de datos personales",
+        consentSuffix: " conforme a la Ley 1581 de 2012.",
+        submit: "Enviar consulta",
       },
     },
     footer: {
       disclaimer:
         "Juan Sebastián Bedoya Castrillón es estudiante de Derecho en último semestre en la Universidad EAFIT y aún no cuenta con tarjeta profesional de abogado. Este sitio no ofrece representación legal ni litigio.",
       rights: "Todos los derechos reservados.",
+      dataPolicyTitle: "Tratamiento de datos personales",
+      dataPolicyBody:
+        "En cumplimiento de la Ley 1581 de 2012 y sus decretos reglamentarios, los datos personales que compartas a través de este sitio (nombre, teléfono y correo) serán usados únicamente para responder tu consulta y no serán compartidos con terceros sin tu autorización. Puedes solicitar la actualización, corrección o eliminación de tus datos escribiendo a jsbedoyac@gmail.com.",
     },
   },
   en: {
@@ -179,7 +187,6 @@ export const content = {
         "Building a legal practice grounded in negotiation, conflict resolution, and close client care — with the rigor of someone training to practice with excellence.",
       ctaPrimary: "Book a consultation",
       ctaSecondary: "See my path",
-      badge: "Graduating soon — Universidad EAFIT",
     },
     about: {
       eyebrow: "About me",
@@ -289,6 +296,7 @@ export const content = {
     contact: {
       eyebrow: "Contact",
       title: "Let's talk about your case",
+      freeConsultation: "Free consultation",
       body:
         "Reach out and I'll gladly review your situation to guide you or connect you with the right professional.",
       email: "jsbedoyac@gmail.com",
@@ -299,16 +307,24 @@ export const content = {
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
       whatsappIntro: "Hello. I'm interested in consulting with Bedoya - Legal.",
       formLabels: {
-        name: "Name",
+        name: "Full name",
+        phone: "Phone / WhatsApp",
         email: "Email",
-        message: "Tell me how I can help",
-        submit: "Send via WhatsApp",
+        message: "Briefly tell me what happened",
+        disclaimer: "Everything you share is treated confidentially.",
+        consentPrefix: "I accept the ",
+        consentLink: "personal data processing policy",
+        consentSuffix: " under Colombian Law 1581 of 2012.",
+        submit: "Send inquiry",
       },
     },
     footer: {
       disclaimer:
         "Juan Sebastián Bedoya Castrillón is a final-year Law student at Universidad EAFIT and does not yet hold a professional bar license. This site does not offer legal representation or litigation services.",
       rights: "All rights reserved.",
+      dataPolicyTitle: "Personal data processing",
+      dataPolicyBody:
+        "In accordance with Colombian Law 1581 of 2012 and its regulatory decrees, any personal data you share through this site (name, phone, and email) will be used solely to respond to your inquiry and will not be shared with third parties without your authorization. You may request the update, correction, or deletion of your data by writing to jsbedoyac@gmail.com.",
     },
   },
 } as const;
