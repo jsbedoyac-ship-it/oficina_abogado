@@ -145,29 +145,29 @@ export const content = {
           number: "01",
           title: "Escucha",
           description:
-            "Conversación inicial sin costo. Salgo entendiendo tu situación, no solo el problema legal.",
-          deliverable: "Entrega: resumen del caso",
+            "Reunión sin costo. Salgo entendiendo el negocio, no solo el problema legal.",
+          deliverable: "Entrega: acta de alcance",
         },
         {
           number: "02",
           title: "Diagnóstico",
           description:
-            "Reviso la documentación y ubico los riesgos y las opciones reales, en lenguaje claro.",
+            "Riesgos ordenados por gravedad y costo probable. En dos páginas, en español.",
           deliverable: "Entrega: informe · 72 h",
         },
         {
           number: "03",
-          title: "Orientación",
+          title: "Estrategia",
           description:
-            "Te explico qué puedo acompañarte a resolver directamente y cuándo conviene un abogado titulado.",
-          deliverable: "Entrega: plan de acción",
+            "Dos rutas: la de acuerdo y la contenciosa, con tiempos y honorarios de cada una.",
+          deliverable: "Entrega: plan y presupuesto",
         },
         {
           number: "04",
-          title: "Acompañamiento",
+          title: "Ejecución",
           description:
-            "Sigo el proceso contigo, con actualizaciones periódicas, sin que tengas que perseguirme.",
-          deliverable: "Entrega: reporte de avance",
+            "Interlocución directa conmigo y reporte de avance en fecha fija, sin que lo pidas.",
+          deliverable: "Entrega: reporte mensual",
         },
       ],
     },
@@ -357,29 +357,29 @@ export const content = {
           number: "01",
           title: "Listen",
           description:
-            "A free initial conversation. I come away understanding your situation, not just the legal problem.",
-          deliverable: "Deliverable: case summary",
+            "A free meeting. I come away understanding the business, not just the legal problem.",
+          deliverable: "Deliverable: scope memo",
         },
         {
           number: "02",
           title: "Diagnosis",
           description:
-            "I review the documentation and map out the real risks and options, in plain language.",
+            "Risks ranked by severity and likely cost. In two pages, in plain language.",
           deliverable: "Deliverable: report · 72 h",
         },
         {
           number: "03",
-          title: "Guidance",
+          title: "Strategy",
           description:
-            "I explain what I can help you resolve directly, and when a licensed attorney is the right call.",
-          deliverable: "Deliverable: action plan",
+            "Two paths: settlement or litigation, each with its own timeline and fees.",
+          deliverable: "Deliverable: plan and budget",
         },
         {
           number: "04",
-          title: "Follow-through",
+          title: "Execution",
           description:
-            "I stay with the process, with periodic updates, so you never have to chase me for a status.",
-          deliverable: "Deliverable: progress report",
+            "Direct communication with me and progress reports on a fixed date, without you having to ask.",
+          deliverable: "Deliverable: monthly report",
         },
       ],
     },
