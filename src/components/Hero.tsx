@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
-import { ArrowDown, Scale } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const container: Variants = {
   hidden: {},
@@ -22,6 +24,10 @@ const item: Variants = {
 
 export function Hero() {
   const { t } = useLanguage();
+  const whatsappHref = buildWhatsAppUrl(
+    t.contact.phoneWhatsapp,
+    t.contact.whatsappIntro,
+  );
 
   return (
     <section
@@ -79,7 +85,9 @@ export function Hero() {
             className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
           >
             <a
-              href="#contacto"
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-ink transition-transform duration-200 hover:scale-[1.03] hover:bg-gold-light cursor-pointer"
             >
               {t.hero.ctaPrimary}
@@ -105,20 +113,24 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
-          className="mx-auto flex aspect-square w-full max-w-[320px] items-center justify-center lg:max-w-[380px]"
+          className="mx-auto flex flex-col items-center gap-4"
         >
-          <div className="relative flex h-full w-full items-center justify-center rounded-full border border-gold/30 bg-gradient-to-br from-navy-soft to-ink">
-            <div className="absolute inset-4 rounded-full border border-gold/20" />
-            <div className="flex flex-col items-center gap-3 text-center">
-              <Scale size={32} className="text-gold-light" aria-hidden="true" />
-              <span className="font-serif-display text-4xl tracking-widest text-gold-light">
-                JSBC
-              </span>
-              <span className="text-[0.65rem] tracking-[0.2em] text-paper/50 uppercase">
-                Universidad EAFIT
-              </span>
+          <div className="relative aspect-square w-full max-w-[320px] rounded-full border border-gold/30 bg-gradient-to-br from-navy-soft to-ink p-2 lg:max-w-[380px]">
+            <div className="relative h-full w-full overflow-hidden rounded-full">
+              <Image
+                src="/juan-sebastian-bedoya.jpg"
+                alt="Juan Sebastián Bedoya Castrillón"
+                fill
+                sizes="(min-width: 1024px) 380px, 320px"
+                className="object-cover"
+                priority
+              />
             </div>
+            <div className="pointer-events-none absolute inset-2 rounded-full border border-gold/20" />
           </div>
+          <span className="text-[0.65rem] tracking-[0.2em] text-paper/50 uppercase">
+            Universidad EAFIT
+          </span>
         </motion.div>
       </div>
     </section>

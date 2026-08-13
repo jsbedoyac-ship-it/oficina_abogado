@@ -4,11 +4,16 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Languages } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 export function Nav() {
   const { t, lang, toggle } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const whatsappHref = buildWhatsAppUrl(
+    t.contact.phoneWhatsapp,
+    t.contact.whatsappIntro,
+  );
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -56,7 +61,9 @@ export function Nav() {
             {lang === "es" ? "EN" : "ES"}
           </button>
           <a
-            href="#contacto"
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-gold px-5 py-2 text-sm font-semibold text-ink transition-colors duration-200 hover:bg-gold-light cursor-pointer"
           >
             {t.nav.cta}
@@ -109,7 +116,9 @@ export function Nav() {
                   {lang === "es" ? "EN" : "ES"}
                 </button>
                 <a
-                  href="#contacto"
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                   className="rounded-full bg-gold px-5 py-2 text-sm font-semibold text-ink cursor-pointer"
                 >

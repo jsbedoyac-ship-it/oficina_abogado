@@ -142,11 +142,12 @@ export const content = {
       location: "Medellín, Colombia",
       linkedin:
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
+      whatsappIntro: "Me gustaría conocer los servicios de Bedoya - Legal.",
       formLabels: {
         name: "Nombre",
         email: "Correo",
         message: "Cuéntame en qué puedo ayudarte",
-        submit: "Enviar mensaje",
+        submit: "Enviar por WhatsApp",
       },
     },
     footer: {
@@ -296,11 +297,12 @@ export const content = {
       location: "Medellín, Colombia",
       linkedin:
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
+      whatsappIntro: "I'd like to learn about Bedoya - Legal's services.",
       formLabels: {
         name: "Name",
         email: "Email",
         message: "Tell me how I can help",
-        submit: "Send message",
+        submit: "Send via WhatsApp",
       },
     },
     footer: {

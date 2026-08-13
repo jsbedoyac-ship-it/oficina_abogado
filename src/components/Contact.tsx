@@ -1,26 +1,31 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { Mail, Phone, MapPin, Link2, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Link2, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { Reveal } from "./Reveal";
 
 export function Contact() {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const subject =
-      lang === "es"
-        ? `Contacto desde el sitio — ${name}`
-        : `Website inquiry — ${name}`;
-    const body = `${message}\n\n${lang === "es" ? "Correo de contacto" : "Contact email"}: ${email}`;
-    window.location.href = `mailto:${t.contact.email}?subject=${encodeURIComponent(
-      subject,
-    )}&body=${encodeURIComponent(body)}`;
+    const waMessage = [
+      t.contact.whatsappIntro,
+      "",
+      `${t.contact.formLabels.name}: ${name}`,
+      `${t.contact.formLabels.email}: ${email}`,
+      `${t.contact.formLabels.message}: ${message}`,
+    ].join("\n");
+    window.open(
+      buildWhatsAppUrl(t.contact.phoneWhatsapp, waMessage),
+      "_blank",
+      "noopener,noreferrer",
+    );
   };
 
   const infoItems = [
@@ -28,7 +33,7 @@ export function Contact() {
     {
       icon: Phone,
       label: t.contact.phoneDisplay,
-      href: `https://wa.me/${t.contact.phoneWhatsapp}`,
+      href: buildWhatsAppUrl(t.contact.phoneWhatsapp, t.contact.whatsappIntro),
     },
     { icon: MapPin, label: t.contact.location, href: undefined },
     {
@@ -150,7 +155,7 @@ export function Contact() {
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold tracking-wide text-ink transition-colors duration-200 hover:bg-gold-light cursor-pointer"
               >
                 {t.contact.formLabels.submit}
-                <Send size={15} aria-hidden="true" />
+                <MessageCircle size={15} aria-hidden="true" />
               </button>
             </div>
           </form>
