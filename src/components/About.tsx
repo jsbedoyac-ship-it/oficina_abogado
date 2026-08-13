@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Reveal } from "./Reveal";
 
@@ -9,22 +10,22 @@ export function About() {
   return (
     <section id="sobre-mi" className="bg-ink py-24 text-paper sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <Reveal>
-          <span className="text-xs font-semibold tracking-[0.14em] text-gold-light uppercase">
-            {t.about.eyebrow}
-          </span>
-        </Reveal>
-
-        <div className="mt-8 grid grid-cols-1 gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
-          <Reveal>
-            <h2 className="font-serif-display text-3xl leading-tight font-medium whitespace-pre-line sm:text-4xl">
-              {t.about.name}
-            </h2>
-          </Reveal>
-
+        <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:items-start">
           <div>
+            <Reveal>
+              <span className="text-xs font-semibold tracking-[0.14em] text-gold-light uppercase">
+                {t.about.eyebrow}
+              </span>
+            </Reveal>
+
+            <Reveal delay={0.05}>
+              <h2 className="mt-4 font-serif-display text-3xl leading-tight font-medium whitespace-pre-line sm:text-4xl">
+                {t.about.name}
+              </h2>
+            </Reveal>
+
             <Reveal delay={0.1}>
-              <div className="space-y-5 text-base leading-relaxed text-paper/75 sm:text-lg">
+              <div className="mt-8 space-y-5 text-base leading-relaxed text-paper/75 sm:text-lg">
                 {t.about.body.map((p) => (
                   <p key={p}>{p}</p>
                 ))}
@@ -49,6 +50,18 @@ export function About() {
               </dl>
             </Reveal>
           </div>
+
+          <Reveal delay={0.2} className="lg:sticky lg:top-28">
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-[420px] overflow-hidden rounded-2xl border border-gold/30 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.5)] lg:mx-0">
+              <Image
+                src="/juan-sebastian-bedoya.jpg"
+                alt="Juan Sebastián Bedoya Castrillón"
+                fill
+                sizes="(min-width: 1024px) 420px, 90vw"
+                className="object-cover"
+              />
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>
