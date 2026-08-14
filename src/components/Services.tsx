@@ -29,13 +29,13 @@ export function Services() {
             <Reveal
               key={group.title}
               delay={Math.min(i * 0.08, 0.3)}
-              className="group grid grid-cols-1 gap-4 border-b border-border-dark py-10 lg:grid-cols-[0.3fr_1fr] lg:gap-12"
+              className="group grid grid-cols-1 gap-4 border-b border-border-dark px-4 py-10 transition-colors duration-300 -mx-4 hover:bg-paper/[0.03] lg:grid-cols-[0.3fr_1fr] lg:gap-12"
             >
               <div>
-                <span className="font-serif-display text-lg text-gold">
+                <span className="font-serif-display text-lg text-gold transition-transform duration-300 group-hover:scale-110 inline-block">
                   {group.number}
                 </span>
-                <h3 className="mt-2 font-serif-display text-2xl text-paper">
+                <h3 className="mt-2 font-serif-display text-2xl text-paper transition-colors duration-300 group-hover:text-gold-light">
                   {group.title}
                 </h3>
                 <p className="mt-2 text-xs tracking-wide text-paper/40 uppercase">

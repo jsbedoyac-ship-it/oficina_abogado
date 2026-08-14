@@ -1,10 +1,17 @@
 "use client";
 
+import { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Reveal } from "./Reveal";
 
 export function Timeline() {
   const { t } = useLanguage();
+  const listRef = useRef<HTMLOListElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: listRef,
+    offset: ["start 0.75", "end 0.4"],
+  });
 
   return (
     <section id="trayectoria" className="bg-paper-alt py-24 sm:py-32">
@@ -19,7 +26,12 @@ export function Timeline() {
         </Reveal>
 
         <div className="mx-auto mt-16 max-w-3xl">
-          <ol className="relative border-l border-border pl-8 sm:pl-10">
+          <ol ref={listRef} className="relative border-l border-border pl-8 sm:pl-10">
+            <motion.div
+              aria-hidden="true"
+              className="absolute top-0 -left-px w-px origin-top bg-gold"
+              style={{ height: "100%", scaleY: scrollYProgress }}
+            />
             {t.timeline.items.map((entry, i) => (
               <Reveal
                 as="li"

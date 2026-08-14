@@ -37,12 +37,12 @@ export function About() {
                 {t.about.facts.map((fact) => (
                   <div
                     key={fact.label}
-                    className="flex items-center justify-between border-b border-border-dark py-4"
+                    className="group flex items-center justify-between border-b border-border-dark py-4 transition-colors duration-200 hover:border-gold/40"
                   >
-                    <dt className="text-sm font-medium text-paper/90 sm:text-base">
+                    <dt className="text-sm font-medium text-paper/90 transition-colors duration-200 sm:text-base">
                       {fact.label}
                     </dt>
-                    <dd className="text-sm text-paper/50 sm:text-base">
+                    <dd className="text-sm text-paper/50 transition-colors duration-200 group-hover:text-gold-light sm:text-base">
                       {fact.value}
                     </dd>
                   </div>
@@ -58,7 +58,7 @@ export function About() {
                 alt="Juan Sebastián Bedoya Castrillón"
                 fill
                 sizes="(min-width: 1024px) 420px, 90vw"
-                className="object-cover"
+                className="object-cover transition-transform duration-700 ease-out hover:scale-105"
               />
             </div>
           </Reveal>

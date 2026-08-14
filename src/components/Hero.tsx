@@ -45,8 +45,31 @@ export function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 top-1/2 h-[560px] w-[560px] -translate-y-1/2 rounded-full border border-gold/20"
         initial={{ opacity: 0, scale: 0.9, rotate: -8 }}
-        animate={{ opacity: 1, scale: 1, rotate: 0 }}
-        transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
+        animate={{
+          opacity: [0, 1, 1],
+          scale: [0.9, 1, 1.015, 1],
+          rotate: 0,
+        }}
+        transition={{
+          opacity: { duration: 1.4, ease: [0.22, 1, 0.36, 1] },
+          scale: {
+            duration: 9,
+            times: [0, 0.16, 0.58, 1],
+            repeat: Infinity,
+            ease: "easeInOut",
+          },
+          rotate: { duration: 1.4, ease: [0.22, 1, 0.36, 1] },
+        }}
+      />
+      <motion.div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-24 top-1/2 h-[560px] w-[560px] -translate-y-1/2 rounded-full border border-gold/10"
+        initial={{ opacity: 0, scale: 1.08 }}
+        animate={{ opacity: [0, 0.5, 0.2, 0.5], scale: [1.08, 1.12, 1.08] }}
+        transition={{
+          opacity: { duration: 9, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
+          scale: { duration: 9, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
+        }}
       />
 
       <div className="relative mx-auto w-full max-w-6xl px-5 pt-28 pb-16 sm:px-8 lg:pt-24">
@@ -101,10 +124,14 @@ export function Hero() {
             </a>
             <a
               href="#trayectoria"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-paper/25 px-7 py-3.5 text-sm font-semibold tracking-wide text-paper transition-colors duration-200 hover:border-gold-light hover:text-gold-light cursor-pointer"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-paper/25 px-7 py-3.5 text-sm font-semibold tracking-wide text-paper transition-all duration-200 hover:scale-[1.03] hover:border-gold-light hover:text-gold-light cursor-pointer"
             >
               {t.hero.ctaSecondary}
-              <ArrowDown size={15} aria-hidden="true" />
+              <ArrowDown
+                size={15}
+                aria-hidden="true"
+                className="transition-transform duration-200 group-hover:translate-y-0.5"
+              />
             </a>
           </motion.div>
         </motion.div>

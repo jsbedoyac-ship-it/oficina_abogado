@@ -251,10 +251,14 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold tracking-wide text-ink uppercase transition-colors duration-200 hover:bg-gold-light cursor-pointer"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold tracking-wide text-ink uppercase transition-all duration-200 hover:scale-[1.02] hover:bg-gold-light cursor-pointer"
               >
                 {t.contact.formLabels.submit}
-                <ArrowRight size={15} aria-hidden="true" />
+                <ArrowRight
+                  size={15}
+                  aria-hidden="true"
+                  className="transition-transform duration-200 group-hover:translate-x-1"
+                />
               </button>
             </div>
           </form>

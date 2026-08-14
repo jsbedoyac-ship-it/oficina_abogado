@@ -26,12 +26,12 @@ export function Method() {
             <Reveal
               key={step.title}
               delay={Math.min(i * 0.08, 0.3)}
-              className="border-l border-border pl-6 sm:border-l-0 sm:border-t sm:pt-6 sm:pl-0"
+              className="group border-l border-border pl-6 transition-all duration-300 hover:-translate-y-1 hover:border-gold sm:border-l-0 sm:border-t sm:pt-6 sm:pl-0 sm:hover:border-t-gold"
             >
               <span className="text-xs font-semibold tracking-wide text-gold uppercase">
                 {t.method.stepLabel} {step.number}
               </span>
-              <h3 className="mt-2 font-serif-display text-xl text-ink">
+              <h3 className="mt-2 font-serif-display text-xl text-ink transition-colors duration-300 group-hover:text-navy">
                 {step.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">
