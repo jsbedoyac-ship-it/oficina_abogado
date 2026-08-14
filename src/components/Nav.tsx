@@ -31,11 +31,14 @@ export function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <a
-          href="#top"
-          className="font-serif-display text-lg tracking-wide text-paper cursor-pointer"
-        >
-          JSBC
+        <a href="#top" className="flex flex-col leading-none cursor-pointer">
+          <span className="font-serif-display text-sm tracking-wide text-paper uppercase sm:text-base">
+            Bedoya Castrillón
+          </span>
+          <span className="mt-1.5 h-px w-7 bg-gold" />
+          <span className="mt-1.5 hidden text-[0.55rem] tracking-[0.2em] text-paper/50 uppercase sm:block">
+            Asesoría Legal
+          </span>
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

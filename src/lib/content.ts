@@ -180,7 +180,7 @@ export const content = {
       linkedin:
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
       whatsappIntro: "Buen día. Estoy interesado en consultar con Bedoya - Legal.",
-      materias: ["Corporativo", "Civil y familia", "Conciliación"],
+      materias: ["Corporativo", "Civil y familia", "Conciliación", "Privado", "Otro"],
       infoLabels: {
         email: "Correo",
         phone: "Teléfono",
@@ -388,7 +388,7 @@ export const content = {
       linkedin:
         "https://www.linkedin.com/in/juan-sebasti%C3%A1n-bedoya-castrill%C3%B3n-142779356",
       whatsappIntro: "Hello. I'm interested in consulting with Bedoya - Legal.",
-      materias: ["Corporate", "Civil & family", "Conciliation"],
+      materias: ["Corporate", "Civil & family", "Conciliation", "Private", "Other"],
       infoLabels: {
         email: "Email",
         phone: "Phone",
